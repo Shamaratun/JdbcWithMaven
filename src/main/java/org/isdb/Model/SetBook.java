@@ -5,11 +5,7 @@ import java.sql.SQLException;
 import java.sql.*;
 
 
-public class SetBook {
-        private static final String URL = "jdbc:oracle:thin:@localhost:1521/ORCLPDB"; // Service Name
-        // private static final String URL = "jdbc:oracle:thin:@localhost:1521:ORCLPDB"; // SID
-        private static final String USER = "orclpdbuser";
-        private static final String PASSWORD = "isdb62";
+public class SetBook extends OracleConnection {
 
         public void insertDummyData(String[][] books) {
             String insertQuery = "INSERT INTO BOOK ( title,author, price, available) VALUES (?,?, ?, ?)";
