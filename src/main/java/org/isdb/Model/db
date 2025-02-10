@@ -1,0 +1,7 @@
+CREATE TABLE Books(
+  id		integer GENERATED ALWAYS AS IDENTITY START WITH 1 INCREMENT BY 1 PRIMARY KEY,			--Column for the book's id
+  title VARCHAR(100),      -- Column for the book's name
+  author VARCHAR(100),    -- Column for the author's name
+  price DOUBLE PRECISION,      -- Column for the book's price
+  available VARCHAR(100)          -- Column for the book's storage status
+);
